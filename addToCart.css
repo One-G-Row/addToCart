@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #fff176;
+    color: #432000;
+    user-select: none; /* removes the select event, when user clicks on any part of the page it doesnt select anything*/
+}
+fieldset{
+    width: 25%;
+    height: 90vh;
+    margin: 30px auto;
+    border: 3px solid #fff176;
+    border-radius: 10px;
+    background-color: #fff176;
+}
+h1{
+    margin-left: 35px;
+    margin-bottom: 0;
+    color: #e95fa4;
+}
+#image{
+    background-image: url("cat2.png");
+    max-width: 220px;
+    height: 165px;
+    margin-left: 40px;
+}
+
+input {
+    color: #e95fa4;
+    background-color: #fff176;
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 190px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+}
+/* how to use onfocus event in css*/
+input:focus{ 
+    border-color: pink;
+    outline: none; /*removes the black outline around the border of the input field*/
+}
+/*how to select a placeholder and change the color of the text*/
+::placeholder{
+    color: #e95fa4;
+}
+button {
+    color: #FDFDFD;
+    background-color: #bedb39;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+/*changes the color of the button and the cursor type when hovering over the button*/
+button:hover{
+    background-color: #f097c3;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 10px; /*used in flexbox. It's used to create space between images, buttons etc instead of using margin*/
+}
+
+ul li {
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f097c3;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+    
+}
+/*changes the color of the list elements and the type of cursor when hovered over*/
+ul li:hover{
+    background-color: #FFECC7;
+    cursor: pointer;
+}
+
